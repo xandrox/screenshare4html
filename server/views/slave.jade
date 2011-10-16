@@ -1,0 +1,11 @@
+script(src="/socket.io/socket.io.js")
+script(src="/javascripts/jquery-1.6.2.js")
+script(src="/javascripts/binoculars.js")
+script
+    $(document).ready(function() {
+        const b = new Binoculars({sessionId: "#{sessionId}"}),
+            container = document.getElementById("monitor");
+        b.show(container);
+    });
+
+div(id='monitor')
